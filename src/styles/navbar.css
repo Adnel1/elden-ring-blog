@@ -1,0 +1,16 @@
+.favorite-counter {
+    color: var(--accent-color);
+    background-color: black;
+    border-radius: 15%;
+    font-weight: bold;
+    padding: 3px 7px;
+}
+
+.trash {
+    cursor: pointer;
+    transition: color 0.5s ease;
+}
+
+.trash:hover {
+    color: red;
+}

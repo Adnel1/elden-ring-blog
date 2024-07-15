@@ -1,0 +1,85 @@
+/* 
+    General Styles
+*/
+
+:root {
+    --accent-color: #c19d53;
+}
+
+.bg-accent {
+    background-color: var(--accent-color);
+}
+
+.list {
+    list-style-type: none;
+    padding: 1rem;
+    margin: 0;
+}
+
+.card-text {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    height: auto;
+    transition: max-height 0.3s ease;
+}
+
+.card-text.expanded {
+    -webkit-line-clamp: unset;
+}
+
+.card-style {
+    font-size: 14px;
+    color: white;
+    background: rgba( 255, 255, 255, 0.2 );
+    backdrop-filter: blur( 8px );
+    -webkit-backdrop-filter: blur( 8px );
+    border-radius: 20px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.custom-image {
+    width: 70%;
+    margin: 2rem auto;
+}
+
+.card-button {
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+    background-color: var(--accent-color);
+}
+
+.favorites-button-active {
+    background-color: var(--accent-color);
+}
+
+.card-button-outline {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+.card-button-outline:hover {
+    color: white;
+    background-color: var(--accent-color);
+}
+
+.tab {
+    font-size: 14px;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    border: 1px solid gray;
+    transition: color 0.5s ease;
+    transition: border 0.5s ease;
+    transition: background-color 0.5s ease;
+}
+
+.tab:hover, .tab-active {
+    color: #333333;
+    border: 1px solid white;
+    background-color: white;
+}
