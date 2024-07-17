@@ -1,0 +1,48 @@
+.card-text {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    height: auto;
+    transition: max-height 0.3s ease;
+}
+
+.card-text.expanded {
+    -webkit-line-clamp: unset;
+}
+
+.card-style {
+    font-size: 14px;
+    color: white;
+    background: rgba( 255, 255, 255, 0.2 );
+    backdrop-filter: blur( 8px );
+    -webkit-backdrop-filter: blur( 8px );
+    border-radius: 20px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.custom-image {
+    width: 70%;
+    margin: 2rem auto;
+}
+
+.card-button {
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+    background-color: var(--accent-color);
+}
+
+.favorites-button-active {
+    background-color: var(--accent-color);
+}
+
+.card-button-outline {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+.card-button-outline:hover {
+    color: white;
+    background-color: var(--accent-color);
+}

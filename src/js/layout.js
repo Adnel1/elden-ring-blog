@@ -1,6 +1,5 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import ScrollToTop from "./component/scrollToTop";
 import background from "./img/bg.jpg";
 
 import injectContext from "./store/appContext";
@@ -22,18 +21,18 @@ const Layout = () => {
 			backgroundRepeat: 'no-repeat',
 			backgroundPosition: 'center',
 			backgroundAttachment: 'fixed',
+			minHeight: '100vh',
+			width: '100%',
 			display: 'flex',
 			flexDirection: 'column'
 		}}>
 			<BrowserRouter basename={basename}>
-				<ScrollToTop>
-					<Navbar />
-					<Routes>
-						<Route path="/" element={<HomeGrid />} />
-						<Route path="/details/:id" element={<Details />} />
-						<Route path="*" element={<h1>Not found!</h1>} />
-					</Routes>
-				</ScrollToTop>
+				<Navbar />
+				<Routes>
+					<Route path="/" element={<HomeGrid />} />
+					<Route path="/details/:id" element={<Details />} />
+					<Route path="*" element={<h1>Not found!</h1>} />
+				</Routes>
 			</BrowserRouter>
 		</div>
 	);

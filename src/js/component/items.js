@@ -4,7 +4,7 @@ import { Context } from "../store/appContext";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart } from "@fortawesome/free-regular-svg-icons";
 import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
-
+import "../../styles/card.css";
 import placeholderImage from "../img/placeholder.jpg";
 
 const Items = () => {

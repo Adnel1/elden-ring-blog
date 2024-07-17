@@ -1,3 +1,22 @@
+.tab {
+    font-size: 14px;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    border: 1px solid gray;
+    transition: color 0.5s ease;
+    transition: border 0.5s ease;
+    transition: background-color 0.5s ease;
+}
+
 .tab-content {
     margin-top: 3em;
+}
+
+.tab:hover, .tab-active {
+    color: #333333;
+    border: 1px solid white;
+    background-color: white;
 }
